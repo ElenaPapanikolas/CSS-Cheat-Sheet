@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     line-height: 1.3;
     background: lightcyan;
+    font-family: "Calibri", "Arial", sans-serif;
 }
 
 header {
@@ -16,16 +17,24 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    row-gap: 50px;
+    row-gap: 90px;
     width: 100%;
     
 }
 
 section {
-    
     border: solid 5px;
-    width: 300px;
-    padding: 50px;
+    flex: 0 0 350px;
+    padding: 30px;
+    background: linear-gradient(rgb(240, 212, 246), rgb(226, 38, 226));
+    
+}
+
+pre {
+    font-size: 15px;
+    white-space: pre-wrap;
+    font-family: "Andale Mono", "Lucida Console", monospace;
+     
 }
 
 h2 {
@@ -35,4 +44,16 @@ h2 {
     padding: 10px;
     font-size: 140%;
     background-color: rgb(167, 124, 223);
+}
+
+@media screen and (max-width: 992px) {
+    section {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        width: 100%;
+    }
 }
